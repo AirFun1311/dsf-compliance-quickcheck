@@ -1,52 +1,60 @@
-# ⚖️ DSF Compliance Quickcheck
+<div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Compliance: DSGVO / GDPR](https://img.shields.io/badge/Compliance-DSGVO%20%2F%20GDPR-success.svg)](https://gdpr-info.eu/)
-[![Standard: Art. 30, 32, 35 DSGVO](https://img.shields.io/badge/Standard-Art.%2030%2C%2032%2C%2035%20DSGVO-informational.svg)](https://gdpr-info.eu/)
+# DSF Compliance Quickcheck Framework
 
-**Automatisierte & strukturierte DSGVO-Compliance für kleine und mittelständische Unternehmen (KMU) im DACH-Raum.**  
-Pragmatisch, rechtssicher, schnell umsetzbar.
+### Standardized GDPR / DSGVO & NIS2 Regulatory Documentation Framework
 
-Entwickelt von **[DSF Consulting / AirFun1311](https://github.com/AirFun1311)** (Fürth / Nürnberg).
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Compliance: DSGVO / GDPR](https://img.shields.io/badge/compliance-DSGVO%20%2F%20GDPR-0969da.svg)](https://gdpr-info.eu/)
+[![Standards: Art. 30, 32, 35 DSGVO](https://img.shields.io/badge/standards-Art.%2030%2C%2032%2C%2035%20DSGVO-informational.svg)](https://gdpr-info.eu/)
+[![Integration: dsgvo-checker](https://img.shields.io/badge/engine-dsgvo--checker-2496ED.svg)](https://github.com/AirFun1311/dsgvo-checker)
 
----
+<p align="center">
+  <strong>Standardized, legally structured compliance framework for small and medium-sized enterprises (SMEs) and system administrators in the DACH region.</strong><br>
+  Provides audit-ready templates for Records of Processing Activities (VVT), Data Protection Impact Assessments (DSFA/DPIA), Technical & Organizational Measures (TOMs), and Data Processing Agreements (AVV).
+</p>
 
-## 🎯 Überblick & Leistungsbausteine
-
-Der **DSF Compliance Quickcheck** liefert alle gesetzlich vorgeschriebenen Dokumente und technischen Nachweise zur DSGVO-Konformität in einem standardisierten, prüffähigen Paket:
-
-| Modul | Gesetzliche Grundlage | Beschreibung |
-| :--- | :--- | :--- |
-| **VVT** | Art. 30 DSGVO | Vollständiges Verzeichnis von Verarbeitungstätigkeiten für interne Prozesse |
-| **DSFA** | Art. 35 DSGVO | Datenschutz-Folgenabschätzung für risikobehaftete Datenverarbeitungen |
-| **AVV** | Art. 28 DSGVO | Auftragsverarbeitungsvertrags-Checkliste & Vendor Risk Assessment |
-| **Tech Audit** | Art. 32 DSGVO | Automatisierter Website-Security- & Tracker-Scan ([dsgvo-checker](https://github.com/AirFun1311/dsgvo-checker)) |
+</div>
 
 ---
 
-## 🚀 Zielgruppe
+## Documentation Modules & Regulatory Templates
 
-* **KMUs & Startups** in Deutschland, Österreich und der Schweiz
-* **Gesundheitsdienstleister & Praxen** mit besonderen Datenkategorien (Art. 9 DSGVO)
-* **E-Commerce & Agenturen**, die rechtssichere Webauftritte und Drittanbieter-Integrationen benötigen
+The **DSF Compliance Quickcheck** framework provides structured documentation aligned with statutory requirements:
 
----
-
-## 📦 Deliverables & Workflow
-
-1. **Bestandsaufnahme**: Automatisierte Erfassung digitaler Berührungspunkte (Webseite, CRM, Hosting, Newsletter).
-2. **GAP-Analyse**: Identifikation von Abmahnrisiken, fehlenden Einwilligungen oder unverschlüsselten Schnittstellen.
-3. **Dokumentenerstellung**: Generierung revisionssicherer PDF- und Markdown-Dokumentationen.
-4. **Handlungsempfehlungen**: Priorisierter Maßnahmenkatalog nach Aufwand und Dringlichkeit.
+| Module | Statutory Basis | Template Reference | Purpose & Scope |
+| :--- | :--- | :--- | :--- |
+| **VVT** | Art. 30 DSGVO | [`templates/VVT_Art30_Template.md`](templates/VVT_Art30_Template.md) | Structured Record of Processing Activities for internal IT & business operations. |
+| **DSFA** | Art. 35 DSGVO | [`templates/DSFA_Art35_Template.md`](templates/DSFA_Art35_Template.md) | Data Protection Impact Assessment (DPIA) including AI & cloud risk evaluation. |
+| **TOMs** | Art. 32 DSGVO & NIS2 | [`templates/TOM_Art32_Katalog.md`](templates/TOM_Art32_Katalog.md) | Technical and Organizational Measures catalog based on ISO 27001 & BSI IT-Grundschutz. |
+| **AVV** | Art. 28 DSGVO | [`templates/AVV_Art28_Audit.md`](templates/AVV_Art28_Audit.md) | Vendor Risk Assessment checklist & Data Processing Agreement audit schema. |
+| **Tech Audit** | Art. 32(1) DSGVO | **[dsgvo-checker](https://github.com/AirFun1311/dsgvo-checker)** | Automated website security and telemetry verification engine. |
 
 ---
 
-## 🔗 Verwandte Projekte
+## Operational Scope & Target Audience
 
-* 🛡️ **[dsgvo-checker](https://github.com/AirFun1311/dsgvo-checker)** – Die automatische Scan-Engine für Third-Party-Tracker, Cookie-Banner und SSL-Sicherheit.
+* **SMEs & IT Organizations**: Establishing an auditable Data Protection Management System (DPMS).
+* **System Administrators & DevOps**: Implementing Compliance-as-Code within infrastructure pipelines.
+* **Service Providers & Agencies**: Providing verifiable compliance audits for customer systems.
 
 ---
 
-## 📄 Lizenz
+## Implementation Workflow
 
-Dieses Dokumentations- und Rahmenwerk ist unter der **[MIT License](LICENSE)** lizenziert.
+1. **Telemetry Capture**: Audit digital touchpoints using the **[dsgvo-checker](https://github.com/AirFun1311/dsgvo-checker)** engine.
+2. **Gap Analysis & VVT**: Map operational data flows using [`VVT_Art30_Template.md`](templates/VVT_Art30_Template.md).
+3. **Security Baseline**: Validate infrastructure against [`TOM_Art32_Katalog.md`](templates/TOM_Art32_Katalog.md).
+4. **Third-Party Risk Management**: Audit SaaS and hosting vendors via [`AVV_Art28_Audit.md`](templates/AVV_Art28_Audit.md).
+5. **Audit Packaging**: Maintain structured Markdown/PDF records for regulatory reviews.
+
+---
+
+## License
+
+Distributed under the **[MIT License](LICENSE)**.
+
+---
+<div align="center">
+  <sub>Developed by <a href="https://github.com/AirFun1311">AirFun1311 / DSF Consulting</a> • Fuerth / Nuremberg, Germany</sub>
+</div>
